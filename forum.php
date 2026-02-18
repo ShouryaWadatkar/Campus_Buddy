@@ -24,9 +24,9 @@ require __DIR__ . '/includes/header.php';
 
     <section class="panel">
         <h2>Create Thread (Static)</h2>
-        <form class="form-grid" action="#" method="post">
-            <input type="text" placeholder="Thread title" required>
-            <textarea placeholder="Write your question"></textarea>
+        <form id="forumForm" class="form-grid" action="#" method="post" novalidate>
+            <input type="text" name="thread_title" placeholder="Thread title">
+            <textarea name="thread_body" placeholder="Write your question"></textarea>
             <button class="btn btn-primary" type="submit">Post</button>
         </form>
     </section>

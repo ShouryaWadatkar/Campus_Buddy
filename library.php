@@ -13,8 +13,8 @@ require __DIR__ . '/includes/header.php';
     <p class="page-subtitle">Static mockup for library search and issue tracking.</p>
 
     <section class="panel">
-        <form class="form-grid" action="#" method="get">
-            <input type="text" placeholder="Search by title or author">
+        <form id="librarySearchForm" class="form-grid" action="#" method="get" novalidate>
+            <input type="text" name="query" placeholder="Search by title or author">
             <button class="btn btn-primary" type="submit">Search</button>
         </form>
     </section>
