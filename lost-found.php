@@ -24,13 +24,14 @@ require __DIR__ . '/includes/header.php';
 
     <section class="panel">
         <h2>Post New Item (Static)</h2>
-        <form class="form-grid" action="#" method="post">
-            <input type="text" placeholder="Item name" required>
-            <select>
-                <option>Lost</option>
-                <option>Found</option>
+        <form id="lostFoundForm" class="form-grid" action="#" method="post" novalidate>
+            <input type="text" name="item_name" placeholder="Item name">
+            <select name="status">
+                <option value="">Select status</option>
+                <option value="Lost">Lost</option>
+                <option value="Found">Found</option>
             </select>
-            <input type="text" placeholder="Location">
+            <input type="text" name="location" placeholder="Location">
             <button class="btn btn-primary" type="submit">Submit</button>
         </form>
     </section>

@@ -165,6 +165,17 @@ textarea {
     font-size: 14px;
 }
 
+.error-text {
+    display: block;
+    margin-top: 4px;
+    color: #b00020;
+    font-size: 12px;
+}
+
+.input-error {
+    border-color: #b00020;
+}
+
 .btn {
     display: inline-block;
     border: none;

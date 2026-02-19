@@ -4,11 +4,11 @@ require __DIR__ . '/includes/header.php';
 ?>
 <section class="auth-wrap">
     <h1 class="page-title">Sign Up</h1>
-    <form class="auth-form" action="#" method="post">
-        <input type="text" placeholder="Full name" required>
-        <input type="email" placeholder="College email" required>
-        <input type="text" placeholder="Department" required>
-        <input type="password" placeholder="Create password" required>
+    <form id="signupForm" class="auth-form" action="#" method="post" novalidate>
+        <input type="text" name="full_name" placeholder="Full name">
+        <input type="email" name="email" placeholder="College email">
+        <input type="text" name="department" placeholder="Department">
+        <input type="password" name="password" placeholder="Create password">
         <button class="btn btn-primary" type="submit">Create Account</button>
     </form>
     <p>Already registered? <a class="inline-link" href="login.php">Login</a></p>
