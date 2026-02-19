@@ -1,18 +1,5 @@
-﻿<?php
+<?php
 $pageTitle = 'Admin Dashboard - Campus Buddy';
-$stats = [
-    ['label' => 'Total Users', 'value' => '1,268'],
-    ['label' => 'Notes Uploaded', 'value' => '764'],
-    ['label' => 'Pending Reports', 'value' => '12'],
-    ['label' => 'Active Alerts', 'value' => '7'],
-];
-$actions = [
-    'Approve or remove uploaded study materials',
-    'Publish and manage notifications',
-    'Moderate discussion threads and comments',
-    'Review lost and found submissions',
-    'Update event calendar entries',
-];
 require __DIR__ . '/includes/header.php';
 ?>
 <section>
@@ -20,20 +7,35 @@ require __DIR__ . '/includes/header.php';
     <p class="page-subtitle">Control center for module-level content management.</p>
 
     <div class="card-grid">
-        <?php foreach ($stats as $stat): ?>
-            <article class="card">
-                <p class="kicker"><?php echo htmlspecialchars($stat['label']); ?></p>
-                <h2 class="stat-value"><?php echo htmlspecialchars($stat['value']); ?></h2>
-            </article>
-        <?php endforeach; ?>
+        <article class="card">
+            <p class="kicker">Total Users</p>
+            <h2 class="stat-value">1,268</h2>
+        </article>
+
+        <article class="card">
+            <p class="kicker">Notes Uploaded</p>
+            <h2 class="stat-value">764</h2>
+        </article>
+
+        <article class="card">
+            <p class="kicker">Pending Reports</p>
+            <h2 class="stat-value">12</h2>
+        </article>
+
+        <article class="card">
+            <p class="kicker">Active Alerts</p>
+            <h2 class="stat-value">7</h2>
+        </article>
     </div>
 
     <section class="panel">
         <h2>Admin Actions</h2>
         <ul class="action-list">
-            <?php foreach ($actions as $action): ?>
-                <li><?php echo htmlspecialchars($action); ?></li>
-            <?php endforeach; ?>
+            <li>Approve or remove uploaded study materials</li>
+            <li>Publish and manage notifications</li>
+            <li>Moderate discussion threads and comments</li>
+            <li>Review lost and found submissions</li>
+            <li>Update event calendar entries</li>
         </ul>
     </section>
 </section>

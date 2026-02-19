@@ -1,11 +1,5 @@
-﻿<?php
+<?php
 $pageTitle = 'Library - Campus Buddy';
-$books = [
-    ['title' => 'Introduction to Algorithms', 'status' => 'Available', 'rack' => 'CS-12'],
-    ['title' => 'Signals and Systems', 'status' => 'Issued', 'rack' => 'EC-07'],
-    ['title' => 'Engineering Mathematics', 'status' => 'Available', 'rack' => 'MA-03'],
-    ['title' => 'Digital Design', 'status' => 'Available', 'rack' => 'EC-15'],
-];
 require __DIR__ . '/includes/header.php';
 ?>
 <section>
@@ -20,15 +14,37 @@ require __DIR__ . '/includes/header.php';
     </section>
 
     <div class="list-wrap">
-        <?php foreach ($books as $book): ?>
-            <article class="list-item">
-                <div>
-                    <h3><?php echo htmlspecialchars($book['title']); ?></h3>
-                    <p>Rack: <?php echo htmlspecialchars($book['rack']); ?></p>
-                </div>
-                <span class="pill"><?php echo htmlspecialchars($book['status']); ?></span>
-            </article>
-        <?php endforeach; ?>
+        <article class="list-item">
+            <div>
+                <h3>Introduction to Algorithms</h3>
+                <p>Rack: CS-12</p>
+            </div>
+            <span class="pill">Available</span>
+        </article>
+
+        <article class="list-item">
+            <div>
+                <h3>Signals and Systems</h3>
+                <p>Rack: EC-07</p>
+            </div>
+            <span class="pill">Issued</span>
+        </article>
+
+        <article class="list-item">
+            <div>
+                <h3>Engineering Mathematics</h3>
+                <p>Rack: MA-03</p>
+            </div>
+            <span class="pill">Available</span>
+        </article>
+
+        <article class="list-item">
+            <div>
+                <h3>Digital Design</h3>
+                <p>Rack: EC-15</p>
+            </div>
+            <span class="pill">Available</span>
+        </article>
     </div>
 </section>
 <?php require __DIR__ . '/includes/footer.php'; ?>

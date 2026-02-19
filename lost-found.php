@@ -1,25 +1,34 @@
-﻿<?php
+<?php
 $pageTitle = 'Lost & Found - Campus Buddy';
-$items = [
-    ['status' => 'Lost', 'item' => 'Black Wallet', 'place' => 'Cafeteria', 'time' => 'Feb 16, 2026'],
-    ['status' => 'Found', 'item' => 'Water Bottle', 'place' => 'Library 2nd Floor', 'time' => 'Feb 16, 2026'],
-    ['status' => 'Lost', 'item' => 'ID Card (ECE)', 'place' => 'Parking Lot', 'time' => 'Feb 15, 2026'],
-];
 require __DIR__ . '/includes/header.php';
 ?>
 <section>
-    <h1 class="page-title">Lost & Found Section</h1>
+    <h1 class="page-title">Lost &amp; Found Section</h1>
     <p class="page-subtitle">Report or claim missing items from campus (static demo).</p>
     <div class="list-wrap">
-        <?php foreach ($items as $item): ?>
-            <article class="list-item">
-                <div>
-                    <h3><?php echo htmlspecialchars($item['item']); ?></h3>
-                    <p><?php echo htmlspecialchars($item['place']); ?> | <?php echo htmlspecialchars($item['time']); ?></p>
-                </div>
-                <span class="pill"><?php echo htmlspecialchars($item['status']); ?></span>
-            </article>
-        <?php endforeach; ?>
+        <article class="list-item">
+            <div>
+                <h3>Black Wallet</h3>
+                <p>Cafeteria | Feb 16, 2026</p>
+            </div>
+            <span class="pill">Lost</span>
+        </article>
+
+        <article class="list-item">
+            <div>
+                <h3>Water Bottle</h3>
+                <p>Library 2nd Floor | Feb 16, 2026</p>
+            </div>
+            <span class="pill">Found</span>
+        </article>
+
+        <article class="list-item">
+            <div>
+                <h3>ID Card (ECE)</h3>
+                <p>Parking Lot | Feb 15, 2026</p>
+            </div>
+            <span class="pill">Lost</span>
+        </article>
     </div>
 
     <section class="panel">

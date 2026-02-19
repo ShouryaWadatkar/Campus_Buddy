@@ -1,14 +1,5 @@
-﻿<?php
+<?php
 $pageTitle = 'Campus Buddy - Home';
-$modules = [
-    ['title' => 'Study Material Repository', 'desc' => 'Browse notes, PDFs, and unit-wise study resources.', 'link' => 'study-materials.php'],
-    ['title' => 'Event Calendar', 'desc' => 'Check upcoming campus events and academic deadlines.', 'link' => 'events.php'],
-    ['title' => 'Lost & Found Section', 'desc' => 'Post and discover lost or found items from campus.', 'link' => 'lost-found.php'],
-    ['title' => 'Discussion Forum', 'desc' => 'Ask questions, discuss topics, and support classmates.', 'link' => 'forum.php'],
-    ['title' => 'Notifications & Alerts', 'desc' => 'View important announcements and urgent notices.', 'link' => 'notifications.php'],
-    ['title' => 'Library Integration', 'desc' => 'Track borrowed books and search library inventory.', 'link' => 'library.php'],
-];
-
 require __DIR__ . '/includes/header.php';
 ?>
 <section class="hero home-hero">
@@ -26,13 +17,41 @@ require __DIR__ . '/includes/header.php';
 <section>
     <h2 class="section-title">Core Modules</h2>
     <div class="card-grid">
-        <?php foreach ($modules as $module): ?>
-            <article class="card">
-                <h3><?php echo htmlspecialchars($module['title']); ?></h3>
-                <p><?php echo htmlspecialchars($module['desc']); ?></p>
-                <a class="inline-link" href="<?php echo htmlspecialchars($module['link']); ?>">Open module</a>
-            </article>
-        <?php endforeach; ?>
+        <article class="card">
+            <h3>Study Material Repository</h3>
+            <p>Browse notes, PDFs, and unit-wise study resources.</p>
+            <a class="inline-link" href="study-materials.php">Open module</a>
+        </article>
+
+        <article class="card">
+            <h3>Event Calendar</h3>
+            <p>Check upcoming campus events and academic deadlines.</p>
+            <a class="inline-link" href="events.php">Open module</a>
+        </article>
+
+        <article class="card">
+            <h3>Lost &amp; Found Section</h3>
+            <p>Post and discover lost or found items from campus.</p>
+            <a class="inline-link" href="lost-found.php">Open module</a>
+        </article>
+
+        <article class="card">
+            <h3>Discussion Forum</h3>
+            <p>Ask questions, discuss topics, and support classmates.</p>
+            <a class="inline-link" href="forum.php">Open module</a>
+        </article>
+
+        <article class="card">
+            <h3>Notifications &amp; Alerts</h3>
+            <p>View important announcements and urgent notices.</p>
+            <a class="inline-link" href="notifications.php">Open module</a>
+        </article>
+
+        <article class="card">
+            <h3>Library Integration</h3>
+            <p>Track borrowed books and search library inventory.</p>
+            <a class="inline-link" href="library.php">Open module</a>
+        </article>
     </div>
 </section>
 <?php require __DIR__ . '/includes/footer.php'; ?>
